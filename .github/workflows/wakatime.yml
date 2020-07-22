@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checks out the repository
-        uses: actions/checkout@main
+        uses: actions/checkout@v2
       - name: Update GH Gist
         uses: matchai/waka-box@master
         env:
