@@ -1,0 +1,18 @@
+name: Update Recent Activity
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checks out the repository
+        uses: actions/checkout@v2
+      - name: Update the gist
+        uses: JasonEtco/activity-box@master
+        env:
+          # Ok, why do you need GH_PAT when GH_PAT is the same as GITHUB_TOKEN??
+          GH_PAT: ${{ secrets.ACTIVITY_GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACTIVITY_GH_TOKEN }}
+          GH_USERNAME: angeloanan
+          GIST_ID: 041e96abbf9dbea96dd1456cf72b4473
