@@ -8,11 +8,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
       - name: Update gist
-        uses: angeloanan/activity-box-rs@v0.1.0
+        uses: angeloanan/activity-box-rs@master
         env:
           GH_PAT: ${{ secrets.ACTIVITY_GH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.ACTIVITY_GH_TOKEN }}
