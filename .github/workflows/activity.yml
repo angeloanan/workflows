@@ -16,5 +16,5 @@ jobs:
         env:
           GH_PAT: ${{ secrets.ACTIVITY_GH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.ACTIVITY_GH_TOKEN }}
-          GIST_ID: 041e96abbf9dbea96dd1456cf72b4473
+          GIST_ID: 3cb9d41331b6d7288d935c18ba917084
           GH_USERNAME: angeloanan
