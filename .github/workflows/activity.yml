@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Update gist
-        uses: angeloanan/activity-box-rs@master
+        uses: angeloanan/activity-box-rs@main
         env:
           GH_PAT: ${{ secrets.ACTIVITY_GH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.ACTIVITY_GH_TOKEN }}
